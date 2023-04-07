@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo.svg">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="./style/normalize.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/responsive.css" />
+  <link rel="stylesheet" href="./style/accordion.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_container select">
+      <div id="header_logo">
+        <img src="./img/logo.svg" alt="logo" />
+      </div>
+      <div class="header_contacts">
+        <div class="header_contacts-item location_none">
+          <svg class="green-icon" width="23" height="23" viewBox="0 0 23 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.5 0C7.00831 0 3.35419 3.65412 3.35419 8.14582C3.35419 12.4899 10.8014 22.3905 11.1176 22.8102C11.2087 22.9301 11.3496 23 11.5 23C11.6504 23 11.7913 22.9301 11.8824 22.8102C12.1986 22.3905 19.6458 12.4899 19.6458 8.14582C19.6458 3.65412 15.9917 0 11.5 0ZM11.5 21.7149C9.96188 19.6104 4.31251 11.6418 4.31251 8.14582C4.31251 4.18214 7.53632 0.958318 11.5 0.958318C15.4637 0.958318 18.6875 4.18214 18.6875 8.14582C18.6875 11.6399 13.0381 19.6094 11.5 21.7149Z"
+              fill="#FEE600" />
+            <path
+              d="M11.5 3.83331C9.12237 3.83331 7.1875 5.76819 7.1875 8.14581C7.1875 10.5234 9.12237 12.4583 11.5 12.4583C13.8776 12.4583 15.8125 10.5234 15.8125 8.14581C15.8125 5.76819 13.8776 3.83331 11.5 3.83331ZM11.5 11.5C9.65043 11.5 8.14582 9.99543 8.14582 8.14581C8.14582 6.29624 9.65039 4.79163 11.5 4.79163C13.3496 4.79163 14.8542 6.2962 14.8542 8.14581C14.8542 9.99543 13.3496 11.5 11.5 11.5Z"
+              fill="#FEE600" />
+          </svg> <a href="https://goo.gl/maps/Q74XisoSq3MQoj6PA" target="_blank">
+            7041 Grand national drive, suite 230, Orlando, FL</a>
+        </div>
+        <div class="header_contacts-item">
+          <svg class="green-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_16_52)">
+              <path
+                d="M19.987 16.4608C19.9235 15.9802 19.646 15.5658 19.2259 15.324L14.2919 12.4831C13.6876 12.1352 12.9209 12.2365 12.4277 12.7297L11.4558 13.7015C11.1972 13.9602 10.788 13.9831 10.5043 13.7547C9.73813 13.1382 8.98376 12.4598 8.26217 11.7381C7.54059 11.0165 6.86211 10.2622 6.24558 9.49601C6.0172 9.21221 6.04005 8.80311 6.29875 8.54445L7.27057 7.57259C7.76378 7.07942 7.8652 6.31287 7.51718 5.70844L4.67632 0.774363C4.43443 0.354242 4.02009 0.0768392 3.5395 0.0132551C3.05886 -0.0504586 2.5866 0.109841 2.2438 0.452642L0.779419 1.91706C-0.242635 2.93916 -0.25905 4.80876 0.7332 7.18154C1.68731 9.46305 3.46783 11.9746 5.74671 14.2536C8.02568 16.5325 10.5372 18.313 12.8188 19.2671C13.9868 19.7555 15.0327 19.9996 15.9158 19.9996C16.8267 19.9996 17.5643 19.7398 18.0833 19.2209L19.5477 17.7565C19.8904 17.4137 20.0506 16.9414 19.987 16.4608ZM13.9686 13.0446L18.9027 15.8855C19.1467 16.0259 19.3078 16.2666 19.3447 16.5458C19.3757 16.78 19.3148 17.0107 19.1769 17.1965L12.6195 13.4542L12.8858 13.1879C13.1723 12.9014 13.6176 12.8426 13.9686 13.0446ZM3.45449 0.655618C3.73366 0.692551 3.9743 0.853671 4.11478 1.09768L6.95563 6.03175C7.15779 6.38281 7.09887 6.82807 6.81244 7.11446L6.56782 7.35907L2.80487 0.823434C2.95869 0.709527 3.14266 0.64767 3.33445 0.64767C3.37423 0.64767 3.41436 0.650305 3.45449 0.655618ZM17.6251 18.7627C16.8131 19.5747 15.1524 19.5406 13.0688 18.6693C10.8632 17.747 8.42562 16.0161 6.20493 13.7954C3.98424 11.5747 2.2533 9.13709 1.33099 6.93157C0.459598 4.84793 0.425603 3.18723 1.2376 2.3752L2.3247 1.28805L6.09331 7.83358L5.84058 8.08632C5.3475 8.57944 5.30456 9.36007 5.74075 9.90226C6.3718 10.6865 7.066 11.4583 7.80395 12.1963C8.54199 12.9343 9.31382 13.6285 10.098 14.2595C10.6401 14.6957 11.4208 14.6528 11.914 14.1597L12.1446 13.9291L18.711 17.6767L17.6251 18.7627Z"
+                fill="#FEE600" />
+            </g>
+            <defs>
+              <clipPath id="clip0_16_52">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="tel:32819(321) 754-1033">32819(321) 754-1033</a>
+        </div>
+        <div class="header_contacts-item">
+          <svg class="green-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.5 3.99997H1.5C0.672984 3.99997 0 4.67295 0 5.49997V18.5C0 19.327 0.672984 20 1.5 20H22.5C23.327 20 24 19.327 24 18.5V5.49997C24 4.673 23.327 3.99997 22.5 3.99997ZM23 18.5C23 18.776 22.776 19 22.5 19H1.5C1.224 19 0.999984 18.776 0.999984 18.5V5.49997C0.999984 5.22397 1.224 4.99995 1.5 4.99995H22.5C22.776 4.99995 23 5.22397 23 5.49997V18.5Z"
+              fill="#FEE600" />
+            <path
+              d="M23.653 4.54298C23.491 4.31897 23.177 4.269 22.955 4.431L12.882 11.713C12.354 12.096 11.645 12.097 11.116 11.712L1.04703 4.431C0.82301 4.269 0.510026 4.31901 0.34901 4.54298C0.187994 4.767 0.23801 5.07998 0.460994 5.24198L10.529 12.522C10.969 12.842 11.484 13.002 12 13.002C12.515 13.002 13.03 12.842 13.469 12.522L23.541 5.241C23.764 5.07998 23.815 4.767 23.653 4.54298Z"
+              fill="#FEE600" />
+            <path
+              d="M11.067 11.706C10.904 11.483 10.593 11.432 10.368 11.595L0.474999 18.776C0.252014 18.939 0.201998 19.251 0.363998 19.475C0.462014 19.61 0.613983 19.681 0.768999 19.681C0.870014 19.681 0.972999 19.65 1.063 19.586L10.956 12.405C11.179 12.242 11.229 11.93 11.067 11.706Z"
+              fill="#FEE600" />
+            <path
+              d="M23.525 18.776L13.633 11.595C13.407 11.432 13.096 11.482 12.934 11.706C12.772 11.93 12.822 12.242 13.045 12.405L22.937 19.586C23.025 19.65 23.128 19.681 23.23 19.681C23.385 19.681 23.538 19.61 23.636 19.475C23.798 19.251 23.748 18.939 23.525 18.776Z"
+              fill="#FEE600" />
+          </svg> <a href="mailto:info@lemonjulce.biz">
+            info@lemonjulce.biz</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="header_nav">
+    <div class="nav_container">
+      <ul class="nav_list">
+        <li class="nav_item select"><a href="#">HOME</a></li>
+        <li class="nav_item"><a href="#">COVID-19</a></li>
+        <li class="nav_item nav_arrow">
+          <a href="#">SERVICES </a>
+        </li>
+        <li class="nav_item"><a href="#">NEWS</a></li>
+        <li class="nav_item"><a href="#">ABOUT</a></li>
+        <li class="nav_item"><a href="#">PROPERTIES</a></li>
+        <li class="nav_item"><a href="#">OWNERS</a></li>
+
+      </ul>
+      <div class=" nav_eye_btn">
+        <a href="#" class="themetoggle "><img src="./img/visibility.svg" alt="" class="changeTheme dark_mode"
+            data-theme="light"></a>
+        </svg>
+      </div>
+    </div>
+    <div class="contact_burger">
+      <span></span>
+    </div>
+
+  </nav>
+  <section class="banner">
+    <div class="banner_container">
+      <div class="banner_gradient"></div>
+      <div class="banner_content">
+        <h1 class="banner_caption">
+          Reimagining Resorts <br />
+          A Fresh Perspective
+        </h1>
+        <button class="banner_btn">Learn More<span class="flare"></span></button>
+      </div>
+    </div>
+
+    <div class="quote">
+      <h3 class="quote_content">
+        “We partner with owners and boards to provide a truly customized
+        approach.”
+      </h3>
+      <p class="quote_txt">— ALEXANDER KRAKOVSKY, CEO</p>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about_container">
+      <h2 class="about_caption">About us</h2>
+      <p class="about_txt">
+        The very start of Lemonjuice Capital in timeshares in 2013 was from
+        realization that the aggregate value of timeshares is a fraction of
+        the real estate value. Our focus was on distressed and struggling
+        resorts and timeshares.
+      </p>
+      <p class="about_txt">
+        What we learned is that many are failing because of poor management
+        and aggressive sales that took advantage of aging owners. We are
+        different.
+      </p>
+    </div>
+    <div class="about_wrapper">
+      <div class="block1">
+        <div class="item-img technical-support"></div>
+        <h4 class="about_block_caption">Full Service</h4>
+        <p class="about_block_txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
+          efficitur ex, id dignissim ipsum. Aliquam erat volutpat.
+        </p>
+      </div>
+      <div class="block2">
+        <div class="item-img partner"></div>
+        <h4 class="about_block_caption">Strategic planning</h4>
+        <p class="about_block_txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
+          efficitur ex, id dignissim ipsum. Aliquam erat volutpat.
+        </p>
+      </div>
+      <div class="block3">
+        <div class="item-img partner leader"></div>
+        <h4 class="about_block_caption">Competence</h4>
+        <p class="about_block_txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
+          efficitur ex, id dignissim ipsum. Aliquam erat volutpat.
+        </p>
+      </div>
+    </div>
+
+    <div class="about_mission_container">
+      <div class="mission_content">
+        <div class="mission_content_wrapper">
+          <h2 class="mission_caption">Our Mission</h2>
+          <p class="mission-txt">
+            Your resort has unique circumstances and we’ll approach it with a
+            fresh perspective. Our experienced team of professionals will
+            provide the highest measure of owner services, financial
+            management, rental revenue management, and technology
+            optimization. Lets us focus on the details while you focus on your
+            memories!
+          </p>
+          <p class="mission-txt">
+            Additionally, Lemonjuice Solutions is uniquely qualified to help
+            you through the complex situations of sunset clauses, aging
+            ownership, and high owner delinquencies. Professional and
+            objective expertise to assess the situation will avoid costly
+            wheel-spinning.
+          </p>
+          <button class="mission_btn">Learn More</button>
+        </div>
+        <div class="mission-bg"></div>
+      </div>
+      <div class="mission_img"></div>
+
+      <div class="success_img"></div>
+      <div class="success_content">
+        <div class="success_content_wrapper">
+          <h2 class="success_caption">Success stories</h2>
+          <p class="success-txt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
+            efficitur ex, id dignissim ipsum. Aliquam erat volutpat. Maecenas
+            et tellus nibh. Sed rutrum tellus sollicitudin, vulputate magna
+            vel, gravida sapien.
+          </p>
+          <p class="success-txt">
+            Nullam vitae neque gravida, finibus enim quis, luctus augue.
+            Maecenas convallis eget eros vitae congue. Pellentesque ipsum
+            justo, fermentum ac finibus a, accumsan eget augue. Proin ut erat
+            fringilla, varius nibh nec, euismod sapien. Suspendisse iaculis
+            scelerisque diam quis euismod.
+          </p>
+          <p class="success-txt">
+            Sed eleifend dapibus arcu in ultricies. Praesent pulvinar, lacus
+            ac rhoncus iaculis, nisi risus facilisis est, eu laoreet magna
+            lacus placerat ante. Nulla quis sapien et ipsum congue porta eget
+            non arcu. Donec viverra mauris nulla, eu vulputate velit ultricies
+            ut. Etiam vel consequat arcu. Nulla commodo a urna id consequat.
+            Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos.
+          </p>
+          <a href="#" class="success_btn">Learn more</a>
+        </div>
+        <div class="success-bg"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="customers">
+      <div class="customers_container">
+        <div class="customers_content">
+          <div class="customers_text_container">
+            <h3 class="customers_title">50</h3>
+            <h4 class="customers_txt">SEPARATE VILLAS</h4>
+          </div>
+        </div>
+        <div class="customers_content">
+          <div class="customers_text_container">
+            <h3 class="customers_title">10</h3>
+            <h4 class="customers_txt">YEARS OF EXPERIENCE</h4>
+          </div>
+        </div>
+        <div class="customers_content">
+          <div class="customers_text_container">
+            <h3 class="customers_title">85</h3>
+            <h4 class="customers_txt">customers</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="news_caption">News</h2>
+    <div class="news_container">
+      <div class="news">
+        <img src="./img/news.png" alt="news" class="news_img" />
+        <div class="news_content">
+          <h4 class="news_title">Repurpose and Restructure</h4>
+          <p class="news_date">10.04.2020</p>
+          <p class="news_txt">
+            Is this the right time to repurpose and restructure your resort?
+            Maybe, or not. Boards must understand and consider all of their
+            options. The COVID-19 crisis makes this analysis more critical
+            than ever.
+          </p>
+        </div>
+        <div class="news_btn">
+          <a href="#">Read more</a>
+          <img src="./img/next-news.svg" alt="arrow" />
+        </div>
+      </div>
+      <div class="news">
+        <img src="./img/news.png" alt="news" class="news_img" />
+        <div class="news_content">
+          <h4 class="news_title">Repurpose and Restructure</h4>
+          <p class="news_date">10.04.2020</p>
+          <p class="news_txt">
+            Is this the right time to repurpose and restructure your resort?
+            Maybe, or not. Boards must understand and consider all of their
+            options. The COVID-19 crisis makes this analysis more critical
+            than ever.
+          </p>
+        </div>
+        <div class="news_btn">
+          <a href="#">Read more</a>
+          <img src="./img/next-news.svg" alt="arrow" />
+        </div>
+      </div>
+      <div class="news">
+        <img src="./img/news.png" alt="news" class="news_img" />
+        <div class="news_content">
+          <h4 class="news_title">Repurpose and Restructure</h4>
+          <p class="news_date">10.04.2020</p>
+          <p class="news_txt">
+            Is this the right time to repurpose and restructure your resort?
+            Maybe, or not. Boards must understand and consider all of their
+            options. The COVID-19 crisis makes this analysis more critical
+            than ever.
+          </p>
+        </div>
+        <div class="news_btn">
+          <a href="#">Read more</a>
+          <img src="./img/next-news.svg" alt="arrow" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="reviews">
+      <div class="reviews_container">
+        <h2 class="reviews_caption">Testimonials</h2>
+        <div class="reviews_slider">
+          <div class="reviews_box">
+            <img src="./img/Ellipse1.png" alt="" />
+            <h3 class="reviews_title">
+              “It’s is prime property located right on the sound!”
+            </h3>
+            <p class="reviews_txt">
+              “We love staying at Marina Bay Resort! It is prime property
+              located on the sound! They have a wonderful outdoor heated pool
+              overlooking the sound and a great very large hot tub in their
+              courtyard. They have a game room. A nice place to stay and not
+              over-prices!”
+            </p>
+            <h3 class="reviews_author">Stephanie Engle</h3>
+          </div>
+          <div class="reviews_box">
+            <img src="./img/Ellipse2.png" alt="" />
+            <h3 class="reviews_title">
+              “It’s is prime property located right on the sound!”
+            </h3>
+            <p class="reviews_txt">
+              “We love staying at Marina Bay Resort! It is prime property
+              located on the sound! They have a wonderful outdoor heated pool
+              overlooking the sound and a great very large hot tub in their
+              courtyard. They have a game room. A nice place to stay and not
+              over-prices!”
+            </p>
+            <h3 class="reviews_author">Stephanie Engle</h3>
+          </div>
+          <div class="reviews_box">
+            <img class="ellipse3" src="./img/Ellipse33.svg" alt="" />
+            <h3 class="reviews_title">
+              “It’s is prime property located right on the sound!”
+            </h3>
+            <p class="reviews_txt">
+              “We love staying at Marina Bay Resort! It is prime property
+              located on the sound! They have a wonderful outdoor heated pool
+              overlooking the sound and a great very large hot tub in their
+              courtyard. They have a game room. A nice place to stay and not
+              over-prices!”
+            </p>
+            <h3 class="reviews_author">Stephanie Engle</h3>
+          </div>
+
+          <!-- <a href="#" class="next"><img src="./img/next2.png" alt="" /></a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="questions">
+      <div class="questions-bg"></div>
+      <div class="questions_content">
+        <h2 class="questions_caption">Frequently Asked Questions</h2>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <div class="accordion__header">
+              Sign up with your email address to receive news and updates.?
+            </div>
+            <div class="accordion__content" id="first-content" style="display:block">
+              Aliquam vel sem lacinia, pretium velit sed, efficitur risus.
+              Morbi vehicula gravida enim, vel consequat nulla mollis et.
+              Phasellus porta ullamcorper tincidunt. In laoreet condimentum
+              ex, non imperdiet nulla lacinia a. Cras volutpat, erat eu
+              pretium porta, lectus tortor vulputate ipsum, vehicula lacinia
+              eros sem nec ipsum. Suspendisse efficitur nibh ut placerat
+              placerat. Morbi dapibus ornare turpis vitae tempus cras metus
+              quis a lacus.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header show">
+              Sign up with your email address to receive news and updates.?
+            </div>
+            <div class="accordion__content">
+              Aliquam vel sem lacinia, pretium velit sed, efficitur risus.
+              Morbi vehicula gravida enim, vel consequat nulla mollis et.
+              Phasellus porta ullamcorper tincidunt. In laoreet condimentum
+              ex, non imperdiet nulla lacinia a. Cras volutpat, erat eu
+              pretium porta, lectus tortor vulputate ipsum, vehicula lacinia
+              eros sem nec ipsum. Suspendisse efficitur nibh ut placerat
+              placerat. Morbi dapibus ornare turpis vitae tempus cras metus
+              quis a lacus.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              Sign up with your email address to receive news and updates.?
+            </div>
+            <div class="accordion__content">
+              Aliquam vel sem lacinia, pretium velit sed, efficitur risus.
+              Morbi vehicula gravida enim, vel consequat nulla mollis et.
+              Phasellus porta ullamcorper tincidunt. In laoreet condimentum
+              ex, non imperdiet nulla lacinia a. Cras volutpat, erat eu
+              pretium porta, lectus tortor vulputate ipsum, vehicula lacinia
+              eros sem nec ipsum. Suspendisse efficitur nibh ut placerat
+              placerat. Morbi dapibus ornare turpis vitae tempus cras metus
+              quis a lacus.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">
+              Sign up with your email address to receive news and updates.?
+            </div>
+            <div class="accordion__content">
+              Aliquam vel sem lacinia, pretium velit sed, efficitur risus.
+              Morbi vehicula gravida enim, vel consequat nulla mollis et.
+              Phasellus porta ullamcorper tincidunt. In laoreet condimentum
+              ex, non imperdiet nulla lacinia a. Cras volutpat, erat eu
+              pretium porta, lectus tortor vulputate ipsum, vehicula lacinia
+              eros sem nec ipsum. Suspendisse efficitur nibh ut placerat
+              placerat. Morbi dapibus ornare turpis vitae tempus cras metus
+              quis a lacus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="subscribe">
+      <div class="subscribe_container">
+        <h2 class="subscribe_caption">Subscribe</h2>
+        <p class="subscribe_txt">
+          Sign up with your email address to receive news and updates
+        </p>
+        <form action="#">
+          <input class="name" type="text" placeholder="First Name" />
+          <input class="name" type="text" placeholder="Last Name" />
+          <input class="email" type="email" placeholder="Email Address" />
+          <button class="subscribe_btn">Sing UP</button>
+        </form>
+        <p class="subscribe_p">Your privacy is important to us.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer_content">
+      <div class="footer_item1">
+        <img src="./img/logo.svg" alt="logo" />
+        <p>
+          The very start of Lemonjuice Capital in timeshares in 2013 was from
+          realization that the aggregate value of timeshares is a fraction of
+          the real estate value.
+        </p>
+        <div class="footer_follow">
+          <p>Follow us</p>
+          <a class="footer_link" href="#"><svg class="green-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_41_132)">
+                <path
+                  d="M9.99813 2.49062H11.3675V0.105625C11.1313 0.073125 10.3188 0 9.37251 0C7.39813 0 6.04563 1.24187 6.04563 3.52437V5.625H3.86688V8.29125H6.04563V15H8.71688V8.29187H10.8075L11.1394 5.62563H8.71626V3.78875C8.71688 3.01812 8.92438 2.49062 9.99813 2.49062Z"
+                  fill="#FEE600" />
+              </g>
+              <defs>
+                <clipPath id="clip0_41_132">
+                  <rect width="15" height="15" fill="white" />
+                </clipPath>
+              </defs>
+            </svg></a>
+          <a class="footer_link" href="#"><svg class="green-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_41_379)">
+                <path
+                  d="M7.50251 3.64893C5.37564 3.64893 3.65376 5.37268 3.65376 7.49768C3.65376 9.62455 5.37751 11.3464 7.50251 11.3464C9.62939 11.3464 11.3513 9.62268 11.3513 7.49768C11.3513 5.3708 9.62751 3.64893 7.50251 3.64893ZM7.50251 9.9958C6.12189 9.9958 5.00439 8.87768 5.00439 7.49768C5.00439 6.11768 6.12251 4.99955 7.50251 4.99955C8.88251 4.99955 10.0006 6.11768 10.0006 7.49768C10.0013 8.87768 8.88314 9.9958 7.50251 9.9958Z"
+                  fill="#FEE600" />
+                <path
+                  d="M10.5925 0.0476049C9.21249 -0.0167701 5.79436 -0.0136451 4.41311 0.0476049C3.19936 0.10448 2.12874 0.397605 1.26561 1.26073C-0.176886 2.70323 0.00748945 4.64698 0.00748945 7.49761C0.00748945 10.4151 -0.155011 12.3139 1.26561 13.7345C2.71374 15.182 4.68561 14.9926 7.50249 14.9926C10.3925 14.9926 11.39 14.9945 12.4119 14.5989C13.8012 14.0595 14.85 12.8176 14.9525 10.587C15.0175 9.20636 15.0137 5.78886 14.9525 4.40761C14.8287 1.77448 13.4156 0.177605 10.5925 0.0476049ZM12.7769 12.7801C11.8312 13.7257 10.5194 13.6414 7.48436 13.6414C4.35936 13.6414 3.10624 13.6876 2.19186 12.7707C1.13874 11.7226 1.32936 10.0395 1.32936 7.48761C1.32936 4.03448 0.97499 1.5476 4.44061 1.3701C5.23686 1.34198 5.47124 1.33261 7.47561 1.33261L7.50374 1.35135C10.8344 1.35135 13.4475 1.0026 13.6044 4.46761C13.64 5.25823 13.6481 5.49573 13.6481 7.49698C13.6475 10.5857 13.7062 11.8464 12.7769 12.7801Z"
+                  fill="#FEE600" />
+                <path
+                  d="M11.5037 4.3964C12.0005 4.3964 12.4031 3.99374 12.4031 3.49703C12.4031 3.00032 12.0005 2.59766 11.5037 2.59766C11.007 2.59766 10.6044 3.00032 10.6044 3.49703C10.6044 3.99374 11.007 4.3964 11.5037 4.3964Z"
+                  fill="#FEE600" />
+              </g>
+              <defs>
+                <clipPath id="clip0_41_379">
+                  <rect width="15" height="15" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer_item2">
+        <h3 class="footer_title">Quick links</h3>
+        <ul class="footer_nav">
+          <li class="footer_list_item"><a href="#">Home</a></li>
+          <li class="footer_list_item"><a href="#">Covid-19</a></li>
+          <li class="footer_list_item"><a href="#">Services</a></li>
+          <li class="footer_list_item"><a href="#">News</a></li>
+          <li class="footer_list_item"><a href="#">About</a></li>
+          <li class="footer_list_item"><a href="#">Properties</a></li>
+          <li class="footer_list_item"><a href="#">Owners</a></li>
+        </ul>
+      </div>
+      <div class="footer_item3">
+        <h3 class="footer_title">Contact us</h3>
+        <div class="footer_phone">
+          <img src="./img/phone-call.png" alt="" /> <a href="tel:32819(321) 754-1033">32819(321) 754-1033</a>
+        </div>
+        <div class="footer_phone">
+          <img src="./img/email1.png" alt="" /> <a href="mailto:info@lemonjulce.biz">info@lemonjulce.biz</a>
+        </div>
+        <div class="footer_phone">
+          <img src="./img/placeholder.png" alt="" /> <a href="https://goo.gl/maps/Q74XisoSq3MQoj6PA"
+            target="_blank">7041 Grand national drive, suite 230, <br />
+            Orlando, FL</a>
+
+        </div>
+      </div>
+    </div>
+    <h4 class="copyright">©Copyright Lemonjuice Solutions 2021</h4>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="./code//script.js"></script>
+</body>
+
+</html>
